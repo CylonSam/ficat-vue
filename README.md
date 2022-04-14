@@ -31,7 +31,7 @@
 
 - Criar um usuario com permissões para alterar a database que você criou
 
-- Colocar as credenciais de database e usuário no arquivo de ambiente
+- Colocar as credenciais de database e usuário no arquivo de variáveis de ambiente
   
 ### Sobre rodar o projeto
 

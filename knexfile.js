@@ -9,8 +9,6 @@ const seeds = {
   directory: './seeds'
 }
 
-// console.log(config.DATABASE_TYPE)
-
 const genericConnection = {
   host: config.DATABASE_HOST,
   user: config.DATABASE_USER,

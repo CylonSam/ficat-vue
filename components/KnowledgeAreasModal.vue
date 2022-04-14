@@ -171,6 +171,8 @@ export default {
   },
   created() {
     this.categories = knaCatArray()
+
+    // ordena as categorias em ordem alfabetica
     this.categories.sort(function(a, b) {
       const x = a.description.toLowerCase()
       const y = b.description.toLowerCase()

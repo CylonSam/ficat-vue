@@ -299,10 +299,6 @@ export default {
   margin-left: 3%;
 }
 
-.female-checkbox {
-  text-align: left;
-}
-
 .field {
   position: relative;
   top: -1rem;

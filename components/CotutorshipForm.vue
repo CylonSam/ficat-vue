@@ -70,7 +70,7 @@
         </div>
 
         <div class="info-instituicao input-float">
-          <div class="campo-instituicao">
+          <div class="institution-field">
             <input-validation
               ref="cotutorshipInstitution"
               v-model="$v.cotutorshipInstitution.$model"
@@ -120,12 +120,10 @@ import { required, minLength } from 'vuelidate/lib/validators'
 import { recovery, replace } from '~/front/persistence'
 import Card from '~/components/Card'
 import InputValidation from '~/components/InputValidation.js'
-// import WithTooltip from '~/components/WithTooltip'
 
 export default {
   name: 'CotutorshipForm',
   components: { Card, InputValidation },
-  // mixins: [helper],
   data() {
     const { cotutorship } = recovery('form')
     return {
@@ -174,18 +172,15 @@ export default {
       return Object.keys(this.$v).filter(k => !k.startsWith('$'))
     },
     checkNext() {
-      // const { coadvisorName } = this.$refs
       const { validations } = this.$options
       this.$v.$touch()
       for (const field in validations) {
-        // console.log(this.$v[field])
         if (this.$v[field].$invalid && !this.$v[field].$each) {
           this.$refs[field].focus()
 
           return false
         }
         if (this.$v[field].$each) {
-          // se houver $each, só pode dizer q é a array adicional de coorientador
           if (this.$v[field].$each.$invalid) {
             return false
           }
@@ -205,9 +200,6 @@ export default {
         }
       })
     }
-    // onChangeType(e) {
-    //   replace('form', { advisors: this.$data })
-    // }
   },
 
   validations: {
@@ -252,17 +244,9 @@ export default {
   top: -1rem;
 }
 
-.campo-instituicao {
-  /* width: 78%; */
+.institution-field {
   margin-right: 5%;
 }
-/* 
-@media screen and (max-width: 1200px) {
-  .campo-instituicao {
-    width: 100%;
-    margin-right: 0;
-  }
-} */
 
 @media screen and (max-width: 900px) {
   .input-float {
@@ -274,7 +258,7 @@ export default {
     margin-right: 0;
   }
 
-  .campo-instituicao {
+  .institution-field {
     width: 100%;
     margin-right: 0;
   }

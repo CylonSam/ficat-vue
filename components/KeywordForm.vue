@@ -87,8 +87,7 @@ export default {
         'Universidades e faculdades',
         '',
         ''
-      ],
-      vocabButtonFocused: false
+      ]
     }
   },
 
@@ -155,20 +154,4 @@ export default {
   margin-left: 1em;
   justify-content: space-between;
 }
-
-/*
-.tooltip.tt-btn,
-.tooltip.tt-btn:hover {
-  visibility: hidden !important;
-  opacity: 0 !important;
-}
-
-.with-tooltip .tooltip::after {
-  left: 30%;
-}
-
-.tt-btn-visible .tooltip {
-  opacity: 1;
-  visibility: visible;
-} */
 </style>

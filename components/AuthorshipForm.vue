@@ -105,7 +105,6 @@ export default {
   data() {
     const { authors } = recovery('form')
     return {
-      aux: false,
       authors,
       placeholderNames: [
         ['Samantha Luíza Athayde', 'Silva'],
@@ -124,6 +123,7 @@ export default {
   },
 
   mounted() {
+    // console.log(this.$refs
     this.$refs['authorName-0'][0].focus()
   },
 

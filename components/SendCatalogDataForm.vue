@@ -106,8 +106,7 @@ export default {
       captchaHasExpired: false,
       sendEmailCopy: false,
       emailInvalid: false,
-      email: '',
-      initialRef: 'font'
+      email: ''
     }
   },
 
@@ -152,7 +151,6 @@ export default {
       }
     },
     focus() {
-      // console.log(this.$refs)
       this.$refs.font.focus()
     },
 
@@ -196,7 +194,6 @@ export default {
         catalogFont
       } = form
 
-      // console.log(work.selectedAcdUnity)
       const totalPages =
         work.numberType === 'roman'
           ? romanize(+work.totalPages)

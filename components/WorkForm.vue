@@ -276,8 +276,7 @@ export default {
           selectedAcdUnity: undefined,
           selectedCourse: undefined,
           acdUnity: '',
-          knArea: '',
-          initialRef: 'workTitle'
+          knArea: ''
         }
       })
   },

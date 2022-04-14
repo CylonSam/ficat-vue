@@ -79,7 +79,6 @@ import OrientationForm from '~/components/OrientationForm'
 import KeywordForm from '~/components/KeywordForm'
 import SendCatalogDataForm from '~/components/SendCatalogDataForm'
 import CotutorshipForm from '~/components/CotutorshipForm'
-// import WithTooltip from '~/components/WithTooltip'
 
 export default {
   name: 'Steps',
@@ -98,11 +97,9 @@ export default {
       showSocial: false,
       isAnimated: true,
       isRounded: true,
-      isStepsClickable: false,
 
       hasNavigation: true,
       customNavigation: true,
-      isProfileSuccess: false,
 
       labelPosition: 'bottom',
       mobileMode: 'minimalist',
