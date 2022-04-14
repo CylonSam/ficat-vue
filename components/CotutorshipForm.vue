@@ -9,7 +9,7 @@
             :validations="$options.validations.cotutorshipAdvisorName"
             :v="$v"
             :label="$tr('layout.whosName', ['advisor'])"
-            :tooltip-label="$tr('layout.nameTooltip', ['lowAdvisor'])"
+            :tooltip-label="$tr('layout.cotutorshipAdvisorTooltip')"
             :placeholder="placeholder.advisorName"
             class="advisor-name"
             field-name="cotutorshipAdvisorName"
